@@ -1,3 +1,9 @@
 streamlit-lottie==0.0.5
 plotly-express==0.4.1
 docx2txt==0.8
+python-docx==0.8.11
+PyPDF2==3.0.1
+nltk==3.8.1
+transformers==4.30.2
+torch==2.0.1
+textstat==0.7.3

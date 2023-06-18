@@ -5,6 +5,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from docx import Document
 from PyPDF2 import PdfReader
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 from nltk.util import ngrams
 from collections import Counter

@@ -1,0 +1,6 @@
+.idea
+/data/
+/notebooks/my_awesome_model/
+/notebooks/wandb/
+/notebooks/xlm-roberta-base1/
+/model/

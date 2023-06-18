@@ -12,7 +12,7 @@ st.set_page_config(
 
 with st.spinner('Loading model...'):
     tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
-    model = AutoModelForSequenceClassification.from_pretrained("./model/model/checkpoint-10000")
+    model = AutoModelForSequenceClassification.from_pretrained("bamertl/nlp_deep_project")
     st.success('Model loaded successfully!')
 st.spinner()
 

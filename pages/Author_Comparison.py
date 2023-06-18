@@ -5,6 +5,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from docx import Document
 from PyPDF2 import PdfReader
+import nltk
+nltk.download('punkt')
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.util import ngrams
 from collections import Counter
@@ -12,7 +14,7 @@ import scipy.stats as stats
 import numpy as np
 from textstat import flesch_kincaid_grade
 
-nltk.download('punkt')
+
 
 st.set_page_config(
     page_title="NLP Fingerprint Detection",

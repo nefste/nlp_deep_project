@@ -12,6 +12,7 @@ import scipy.stats as stats
 import numpy as np
 from textstat import flesch_kincaid_grade
 
+nltk.download('punkt')
 
 st.set_page_config(
     page_title="NLP Fingerprint Detection",

@@ -27,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/lub/Projects/nlp_deep",
+    "last_opened_file_path": "/home/lub/Projects/new_nlp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -45,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687125663308</updated>
       <workItem from="1687125664298" duration="979000" />
+      <workItem from="1687126723520" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="First">
       <created>1687125789065</created>
@@ -74,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687126335824</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="First">
+      <created>1687127113189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687127113189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

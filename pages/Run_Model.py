@@ -3,7 +3,7 @@ import docx2txt
 import PyPDF2
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-
+from streamlit_lottie import st_lottie
 
 st.set_page_config(
     page_title="NLP Fingerprint Detection",
@@ -13,6 +13,8 @@ st.set_page_config(
 
 st.title("Run Model to detect Author Change")
 st.write("Please upload a Document (PDF or Word) in the left Sidebar")
+st_lottie("https://assets2.lottiefiles.com/packages/lf20_qdmak08f.json", height=300)
+
 with st.spinner('Loading model...'):
     tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
     model = AutoModelForSequenceClassification.from_pretrained("bamertl/nlp_deep_project")

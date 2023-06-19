@@ -68,7 +68,7 @@ def main():
                 changes = predict_author_changes(valid_paragraphs)
                 changes.append(0)
             st.spinner()
-
+            st.warning("For PDF docs: sometimes the paragraph detection does not work steady, to debug copy past the text into a doxc file and upload again in the sidebar left.")
             for i,paragraph in enumerate(valid_paragraphs):
 
                 with st.expander(f"Paragraph {i+1} | {paragraph[:80]}..."):

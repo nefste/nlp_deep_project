@@ -4,14 +4,15 @@ import PyPDF2
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
-st.title("Run Model to detect Author Change")
-st.write("Please upload a Document (PDF or Word) in the left Sidebar")
+
 st.set_page_config(
     page_title="NLP Fingerprint Detection",
     page_icon="🐝",
     layout="wide",
 )
 
+st.title("Run Model to detect Author Change")
+st.write("Please upload a Document (PDF or Word) in the left Sidebar")
 with st.spinner('Loading model...'):
     tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
     model = AutoModelForSequenceClassification.from_pretrained("bamertl/nlp_deep_project")

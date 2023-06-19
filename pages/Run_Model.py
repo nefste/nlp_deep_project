@@ -59,7 +59,8 @@ def main():
                 valid_paragraphs.append(element)
 
         st.success(f"File uploaded, {len(valid_paragraphs)} Paragraphs detected")
-
+        st.warning("For PDF Docs: sometimes the paragraph detection does not work steady, to debug copy past the text into a doxc file and upload again in the sidebar left.")
+            
         if st.button("Run NLP Model"):
             # Your NLP model code goes here
             st.spinner("NLP model is running...")
@@ -68,7 +69,6 @@ def main():
                 changes = predict_author_changes(valid_paragraphs)
                 changes.append(0)
             st.spinner()
-            st.warning("For PDF docs: sometimes the paragraph detection does not work steady, to debug copy past the text into a doxc file and upload again in the sidebar left.")
             for i,paragraph in enumerate(valid_paragraphs):
 
                 with st.expander(f"Paragraph {i+1} | {paragraph[:80]}..."):

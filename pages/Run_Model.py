@@ -4,6 +4,8 @@ import PyPDF2
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
+st.title("Run Model to detect Author Change")
+st.write("Please upload a Document (PDF or Word) in the left Sidebar")
 st.set_page_config(
     page_title="NLP Fingerprint Detection",
     page_icon="🐝",
@@ -33,7 +35,6 @@ def predict_author_changes(paragraphs):
     return author_changes
 
 def main():
-    st.title("Run Model")
 
     uploaded_file = st.sidebar.file_uploader("Upload Document", type=["docx", "pdf"])
 

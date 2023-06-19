@@ -41,10 +41,10 @@ def main():
         if uploaded_file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":  # Check if file is Word document
             file_contents = docx2txt.process(uploaded_file)
         elif uploaded_file.type == "application/pdf":  # Check if file is PDF
-            file_reader = PyPDF2.PdfFileReader(uploaded_file)
+            file_reader = PyPDF2.PdfReader(uploaded_file)
             file_contents = ""
-            for page in range(file_reader.numPages):
-                file_contents += file_reader.getPage(page).extract_text()
+            for page in range(len(file_reader.pages)):
+                file_contents += file_reader.pages[page].extract_text()
         else:
             st.error("Invalid file format. Please upload a Word document (docx) or a PDF.")
             return
